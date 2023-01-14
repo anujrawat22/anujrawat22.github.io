@@ -66,13 +66,13 @@ border: 1px solid blue;
 a{
     text-decoration: none;
     color: white;
+    
 }
 
 
-#resume-button-1{
-    /* border: 1px solid blue; */
-    background-color: #387373;
-}
+
+
+
 
 i{
    margin: .3rem;
@@ -89,8 +89,8 @@ i{
 #home{
     width: 100%;
     height: auto;
-    border: 1px solid red;
-    background-color: #387373;
+    border: 1px solid blue;
+    background-color: #93BFB7;
     display: flex;
     padding: 0 15rem 0 15rem;
     color: #E4F2E7;
@@ -302,10 +302,196 @@ background-color: #387373;
 
 #projects{
     width: 100%;
-    height: auto;
+    height: auto ;
     background-color: #387373;
     border: 1px solid #387373;
 }
+
+#projects-title{
+    width: 20%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+}
+
+#projects-title>h2{
+    font-size: 3.5rem;
+    color: #E4F2E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+}
+
+
+
+/* projects */
+
+
+.project-card{
+    width: 70%;
+    /* border: 1px solid red; */
+    margin: auto;
+    height: auto;
+    display: flex;
+    background-color: #93BFB7;
+    padding: 2rem;
+    justify-content: space-between;
+    border-radius:1rem;
+    margin-bottom: 3rem;
+}
+
+.project-content{
+    width: 45%;
+    color: #E4F2E7;
+}
+
+.project-img{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+}
+
+.project-img>img{
+    width: 100%;
+    border-radius: .3rem;
+}
+
+.project-description{
+    font-size: 1.8rem;
+}
+
+.project-description+h2{
+    font-size: 1.8rem;
+}
+
+.project-tech-stack{
+  font-size: 1.8rem;
+}
+
+
+.project-title{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.project-title+p{
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: .2rem;
+}
+
+#project-buttons{
+    width: 70%;
+    display: flex;
+    /* border: 1px solid red; */
+    height: 3.5rem;
+    margin: auto;
+    justify-content: space-around;
+}
+
+#project-buttons>a{
+    width: 30%;
+    /* border: 1px solid blue; */
+    border-radius: .4rem;
+    height: 3.4rem;
+    font-size: 1.8rem;
+    background-color:  #008F8C;
+}
+
+#project-buttons>a:hover{
+    transform: scale(1.05);
+    background-color:  #387373;
+}
+
+#project-buttons>a>div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* github */
+
+#github{
+    height: auto;
+    width: 100%;
+    background-color: #93BFB7;
+    margin-top: 0;
+    border: 1px solid #93BFB7;
+}
+
+#github>div{
+    width: 80%;
+    /* border: 1px solid red; */
+    margin: auto;
+    height: auto;
+    
+}
+
+#github-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+#github-section>div{
+    /* border: 1px solid blue; */
+    width: 45%;
+    height: auto;
+}
+
+#github-stats-card{
+    width: 100%;
+    height: 50%;
+}
+
+#github-stats-card>img{
+    width: 100%;
+    height: 100%;
+}
+
+#github-streak-stats{
+    width: 100%;
+    height: 50%;
+}
+
+#github-streak-stats>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#github-top-langs{
+    width: 100%;
+    height: 100%;
+}
+
+#github-top-langs>img{
+    width: 100%;
+    height: 100%;
+}
+
+#github-title{
+    width: 20%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+}
+
+#github-title>h2{
+    font-size: 3.5rem;
+    color: #E4F2E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+}
+
 @media screen and (max-width : 1024px)  {
     html {
         font-size: 55%;

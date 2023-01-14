@@ -7,6 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
 </head>
 <body>
     <nav id="nav-menu">
@@ -18,7 +22,7 @@
                 <div><a href="#skills" class="menu-btn"><i class="uil uil-desktop"></i>Skills</a></div>
                 <div><a href="#projects" class="menu-btn"><i class="uil uil-clipboard-notes"></i>Projects</a></div>
                 <div><a href="#contact" class="menu-btn"><i class="uil uil-mobile-android"></i>Contact</a></div>
-                <div id="resume-button-1"><a id="resume-link-1" class="nav-link resume" href="https://drive.google.com/file/d/1XUASBk9SaAmFSgpU1H22Gp4EhX8CZuLA/view?usp=sharing" class="menu-btn" download><i class="uil uil-file-download-alt"></i>Resume</a></div>
+                <div ><a id="resume-link-1" class="nav-link resume" href="https://drive.google.com/file/d/1XUASBk9SaAmFSgpU1H22Gp4EhX8CZuLA/view?usp=sharing" class="menu-btn" download><i class="uil uil-file-download-alt"></i>Resume</a></div>
             </div>
             <div id="hamburger" >
                 <i class="uil uil-align-right"></i>
@@ -36,7 +40,7 @@
                 <h2>And I'm an <span>Aspiring Back-End Developer</span></h2>
              </div>
              <div>
-                <div id="userimg">
+                <div id="userimg" class="home-img">
                     <img src="./resum-removebg-preview.png" alt=""> 
                 </div>
              </div> 
@@ -49,7 +53,7 @@
             <div id="user-detail-intro"><p>Engineer, proactive, dynamic and multiskilled programmer with the main forte in Backend Development, having knowledge of Javascript, MongoDB, Express, Node.js, HTML, and CSS. Learning and technology enthusiast. Currently seeking opportunities to build reliable, optimised and scalable systems.</p></div>
 
             <div id="aboutbuttons">
-                <div ><a href="https://www.linkedin.com/in/anuj-rawat-abb163219/"><i class="uil uil-file-download-alt"></i>Resume</a></div>
+                <div ><a href="https://www.linkedin.com/in/anuj-rawat-abb163219/" id="resume-link-2"><i class="uil uil-file-download-alt"></i>Resume</a></div>
                 <div href="https://drive.google.com/file/d/1XUASBk9SaAmFSgpU1H22Gp4EhX8CZuLA/view?usp=sharing">
                     <div><a href="https://github.com/anujrawat22"><i class="uil uil-github"></i>Github</a></div>
                 </div>
@@ -79,7 +83,7 @@
                     <p class="skills-card-name">NODE JS</p>
                 </div>
                 <div>
-                    <img src="https://expressjs.com/images/express-facebook-share.png" alt="" class="skills-card-img">
+                    <img src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png" alt="" class="skills-card-img">
                     <p class="skills-card-name">EXPRESS</p>
                 </div>
                 <div>
@@ -113,11 +117,96 @@
  <section>
     <div class="nav-link projects" id="projects" >
         <div id="projects-title"><h2>My Projects</h2></div>
+        <div id="projectsection">
+               <div class="project-card">
+                    <div class="project-img">
+                        <img src="./Screenshot (143).png" alt="">
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-title">Travel Pro</h2>
+                        <p>(Clone : Orbitz.com) </p>
+                        <h2 class="project-description">It is a travel booking platform. Here you can book a flight ticket and hotel <br>It was a collaborative project of five members which
+                            was completed in five days.</h2>
+                        <h2><span>Feature:</span></h2>
+                        <h2 class="project-tech-stack">Tech Stack :HTML, CSS, JavaScript, ExpressJS, and MongoDB</h2>
+                        <div id="project-buttons">
+                            <a href="https://enchanting-pegasus-5127db.netlify.app/index.html"><div class="project-deployed-link">Live<i class="uil uil-arrow-up-right"></i></div></a>
+                            <a href="https://github.com/anujrawat22/safe-hat-14"><div class="project-github-link">Github<i class="uil uil-github"></i></div></a>
+                        </div>
+                    </div>
+               </div>
+        </div>
+        <div id="projectsection">
+            <div class="project-card">
+                 <div class="project-img">
+                     <img src="./Screenshot (135).png" alt="">
+                 </div>
+                 <div class="project-content">
+                     <h2 class="project-title">Cronofit</h2>
+                     <p>(Clone : Cronometer.com) </p>
+                     <h2 class="project-description">It is a travel booking platform. Here you can book a flight ticket and hotel <br>It was a collaborative project of five members which
+                         was completed in five days.</h2>
+                     <h2><span>Feature:</span></h2>
+                     <h2 class="project-tech-stack">Tech Stack :HTML, CSS, JavaScript, ExpressJS, and MongoDB</h2>
+                     <div id="project-buttons">
+                         <a href="https://radiant-muffin-05b02a.netlify.app/"><div class="project-deployed-link">Live<i class="uil uil-arrow-up-right"></i></div></a>
+                         <a href="https://github.com/RationalPrabal/spotless-thumb-400"><div class="project-github-link">Github<i class="uil uil-github"></i></div></a>
+                     </div>
+                 </div>
+            </div>
+     </div>
+     <div id="projectsection">
+        <div class="project-card">
+             <div class="project-img">
+                 <img src="./Screenshot (139).png" alt="">
+             </div>
+             <div class="project-content">
+                 <h2 class="project-title">Bonsai</h2>
+                 <p>(Clone : hellobonsai.com) </p>
+                 <h2 class="project-description">It is a travel booking platform. Here you can book a flight ticket and hotel <br>It was a collaborative project of five members which
+                     was completed in five days.</h2>
+                 <h2><span>Feature:</span></h2>
+                 <h2 class="project-tech-stack">Tech Stack :HTML, CSS, JavaScript, ExpressJS, and MongoDB</h2>
+                 <div id="project-buttons">
+                     <a href="https://spontaneous-gelato-21689c.netlify.app/"><div class="project-deployed-link">Live<i class="uil uil-arrow-up-right"></i></div></a>
+                     <a href="https://github.com/anujrawat22/-rare-animal-2569"><div class="project-github-link">Github<i class="uil uil-github"></i></div></a>
+                 </div>
+             </div>
+        </div>
+ </div>
     </div>
 </section>
 
+
+
+<section>
+    <div id="github">
+       <div>
+        <div id="github-title"><h2 >Github Status</h2></div>
+        <div id="github-section">
+            <div id="github-sec1">
+                <div id="github-stats-card"><img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=anujrawat22&&show_icons=true&theme=light" alt="">
+                </div>
+                <div id="github-streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=anujrawat22" alt=""></div>
+            </div>
+            <div id="github-top-langs"><img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=anujrawat22" alt=""></div>
+        </div>
+        
+        
+       </div>
+       <div class="react-activity-calendar">
+        
+       </div>
+    </div>
+      
+</section>
 <section>
     <div class="nav-link contact" id="contact" ></div>
 </section>
 </body>
 </html>
+<script src="./index.js"></script>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>

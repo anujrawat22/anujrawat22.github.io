@@ -4,5 +4,22 @@
     "cypress:open": "cypress open",
     "start": ""
   },
-  "dependencies": {}
+  "name": "masai-ops-519-663-fznogb-7d6f107c9d514dc4292990424a3e798485d7ef01",
+  "description": "## Maximum Marks - 33",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anujrawat22/anujrawat22.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anujrawat22/anujrawat22.github.io/issues"
+  },
+  "homepage": "https://github.com/anujrawat22/anujrawat22.github.io#readme",
+  "dependencies": {
+    "github-calendar": "^2.3.1",
+    "react-github-calendar": "^3.4.0"
+  }
 }
