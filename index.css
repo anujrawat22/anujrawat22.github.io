@@ -6,15 +6,16 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: #E7F6F2;
 }
 
 #nav-menu{
     width: 100%;
     height: 7rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: fixed;
-    background-color:#2D3E40;
-    
+    background-color:#2C3333;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     display: flex ;
     justify-content: space-between;
     padding: 0 10rem 0 10rem;
@@ -60,7 +61,7 @@ border: 1px solid blue;
 }
 
 .menu div:hover{
-    background-color: #93BFB7;
+    background-color: #395B64 ;
     cursor: pointer;
 }
 a{
@@ -89,11 +90,11 @@ i{
 #home{
     width: 100%;
     height: auto;
-    border: 1px solid blue;
-    background-color: #93BFB7;
+    /* border: 1px solid blue; */
+    background-color: white;
     display: flex;
     padding: 0 15rem 0 15rem;
-    color: #E4F2E7;
+    color: #395B64;
     justify-content: space-between;
     box-sizing: border-box;
 }
@@ -115,6 +116,9 @@ i{
 #user-detail-name{
     font-size: 5rem;
     margin: 0;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right,#A5C9CA,#395B64,#395B64,#E7F6F2);
 }
 
 #user-detail-name+h2{
@@ -144,6 +148,7 @@ i{
    width: 56%;
    border-radius: 50%;
    overflow: hidden;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 #userimg>img{
@@ -151,13 +156,38 @@ i{
     height: 100%;
 }
 
+
+
+.type{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30 ,end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
 /* about */
 
 #about{
 height: auto;
 width: 100%;
 border: 1px solid #97A6A0;
-background-color: #97A6A0;
+/* background-color: #97A6A0; */
 }
 
 
@@ -172,7 +202,7 @@ background-color: #97A6A0;
 
 #title>h2{
     font-size: 3.5rem;
-    color: #E4F2E7;
+    color: #395B64;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,7 +221,7 @@ background-color: #97A6A0;
 #user-detail-intro>p{
     font-size: 2rem;
     text-align: center;
-    color: #E4F2E7;
+    color: rgb(130, 130, 130);
 }
 
 
@@ -215,11 +245,11 @@ align-items: center;
 justify-content: center;
 font-size: 1.8rem;
 color: #E4F2E7;
-background-color: #387373;
+background-color: #395B64;
 }
 
 #aboutbuttons>:nth-child(2){
-    background-color: #387373;
+    background-color: #395B64;
     border-radius: .5rem;
     height: 4rem;
     width: 10rem;
@@ -241,9 +271,9 @@ background-color: #387373;
 #skills{
     height: auto;
     width: 100%;
-    background-color: #93BFB7;
+    background-color: white;
     margin-top: 0;
-    border: 1px solid #93BFB7;
+    border: .5px solid rgb(161, 161, 161);
 }
 
 #skills-title{
@@ -256,7 +286,7 @@ background-color: #387373;
 
 #skills-title>h2{
     font-size: 3.5rem;
-    color: #E4F2E7;
+    color: #395B64;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -291,7 +321,7 @@ background-color: #387373;
 
 .skills-card-name{
     font-size: 2rem;
-    color: #E4F2E7;
+    color: #395B64;
     margin: 0;
     margin-top: 1rem;
 }
@@ -303,8 +333,8 @@ background-color: #387373;
 #projects{
     width: 100%;
     height: auto ;
-    background-color: #387373;
-    border: 1px solid #387373;
+    background-color: #E7F6F2;
+    border: 1px solid #f0ebf9;
 }
 
 #projects-title{
@@ -317,7 +347,7 @@ background-color: #387373;
 
 #projects-title>h2{
     font-size: 3.5rem;
-    color: #E4F2E7;
+    color: #395B64;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -335,16 +365,23 @@ background-color: #387373;
     margin: auto;
     height: auto;
     display: flex;
-    background-color: #93BFB7;
+    background-color: #A5C9CA;
     padding: 2rem;
     justify-content: space-between;
     border-radius:1rem;
     margin-bottom: 3rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.project-card:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .project-content{
     width: 45%;
-    color: #E4F2E7;
+    color: #ffffff;
 }
 
 .project-img{
@@ -399,7 +436,7 @@ background-color: #387373;
     border-radius: .4rem;
     height: 3.4rem;
     font-size: 1.8rem;
-    background-color:  #008F8C;
+    background-color:  #395B64;
 }
 
 #project-buttons>a:hover{
@@ -420,7 +457,7 @@ background-color: #387373;
 #github{
     height: auto;
     width: 100%;
-    background-color: #93BFB7;
+    background-color: #ffffff;
     margin-top: 0;
     border: 1px solid #93BFB7;
 }
@@ -485,7 +522,7 @@ background-color: #387373;
 
 #github-title>h2{
     font-size: 3.5rem;
-    color: #E4F2E7;
+    color: #395B64;
     display: flex;
     justify-content: center;
     align-items: center;
