@@ -7,6 +7,7 @@ body{
     padding: 0;
     overflow-x: hidden;
     background-color: #E7F6F2;
+    font-family: 'Lato', sans-serif;
 }
 
 #nav-menu{
@@ -101,7 +102,7 @@ i{
 
 #home>:nth-child(1){
     margin-top: 20rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -130,6 +131,15 @@ i{
     font-size : 3.5rem;
 }
 
+#animate>h3{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#animate>h2{
+    font-size: 2.5rem;
+    word-spacing: .2rem;
+}
 
 
 #home>:nth-child(2){
@@ -156,16 +166,14 @@ i{
     height: 100%;
 }
 
-
-
-.type{
+.type h2 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(30 ,end),
+      typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
   }
   
@@ -180,6 +188,7 @@ i{
     from, to { border-color: transparent }
     50% { border-color: orange; }
   }
+
 
 /* about */
 
@@ -320,7 +329,7 @@ background-color: #395B64;
 }
 
 .skills-card-name{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #395B64;
     margin: 0;
     margin-top: 1rem;
