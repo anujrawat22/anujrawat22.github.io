@@ -580,6 +580,10 @@ i {
     align-items: center;
   }
 
+  .menu {
+    display: none;
+  }
+
   #home>div:nth-child(1){
     /* border: 1px solid red; */
     width: 100%;
@@ -629,6 +633,20 @@ i {
     width: 10rem;
     display: flex;
     justify-content: center;
+  }
+
+  #github-title{
+    width: 100%;
+  }
+
+  #github-section{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #github-section>div{
+    width: 90%;
+
   }
 }
 
@@ -706,5 +724,15 @@ i {
     width: 10rem;
     display: flex;
     justify-content: center;
+  }
+
+  #github-section{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #github-section>div{
+    width: 90%;
+    
   }
 }
