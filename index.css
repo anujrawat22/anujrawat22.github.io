@@ -1,13 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 body{
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
-    font-family: "Lato", sans-serif;
+    font-family:"Montserrat", "Lato", sans-serif;
     max-width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+*{
+  scroll-behavior: smooth;
+}
+
+/* typing effect */
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+
+
+
 
 h1{
     color: #395B64;
@@ -30,7 +79,7 @@ h1{
     cursor: pointer;
   }
 
-  span{
+  .span{
     font-size: 1.1rem;
     font-weight: bold;
   }
@@ -168,10 +217,52 @@ a{
 #home{
     width: 100vw;
     height: 70vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 8vh;
     box-sizing: border-box;
+    display: flex;
+    padding: 10vh 4vh;
 }
+
+#userimg{
+  /* border: 1px solid blue; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#userimg>img{
+  width: 300px;
+  border-radius: 100%;
+}
+
+#userdetails{
+  /* border: 1px solid blue; */
+  width: 50%;
+  height: 100%;
+  padding: 0 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
+#userdetails>h3{
+  margin: 0;
+}
+
+
+#userdetails>h1{
+  margin: 0;
+}
+
+#userdetails>p{
+  margin: 0;
+}
+
 
 
 
@@ -479,9 +570,18 @@ height: 50%;
     .techcards{
         width: 75vw;
     }
+    
 
+    #userimg{
+      align-items: center;
+      width: 100%;
+    }
     
-    
+   #userdetails{
+padding: 0;
+align-items: center;
+   }
+   
   }
 
 
@@ -500,6 +600,22 @@ height: 50%;
       width: auto;
       height: auto;
       font-size: .9rem;
+    }
+
+    #home{
+      flex-direction: column-reverse;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    #userdetails{
+      width: 100%;
+      height: 50%;
+    }
+
+    #userimg{
+      width: 100%;
+      height: auto;
     }
   }
   @media screen and (max-width: 450px) {
@@ -535,5 +651,17 @@ height: 50%;
 
     .projectdetails{
       padding: 1vh
+    }
+
+
+    #userimg{
+      width: 100%;
+    }
+    #userimg>img{
+      width: 250px;
+    }
+
+    #userdetails>h2{
+      font-size: 1rem;
     }
   }
