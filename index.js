@@ -15,3 +15,7 @@ function download() {
 }
 
 
+function resume(){
+    closeNav()
+    download()
+}

@@ -18,12 +18,28 @@ h1{
     color: #395B64;
   }
 
+  h1:hover{
+    transform: scale(1.05);
+    transition: 500ms;
+    cursor: pointer;
+  }
+
+  h2:hover{
+    transform: scale(1.05);
+    transition: 700ms;
+    cursor: pointer;
+  }
+
+  span{
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
 /* navbar */
 
 #navbar{
     display: flex;
     width: 100vw;
-    height: 10vh;
+    height: 8vh;
     /* border: 1px solid red; */
     padding:0 5vw ;
     justify-content: space-between;
@@ -153,16 +169,62 @@ a{
     width: 100vw;
     height: 70vh;
     border: 1px solid red;
-    margin-top: 10vh;
+    margin-top: 8vh;
     box-sizing: border-box;
 }
+
+
+
+/* about */
+#about{
+  width: 100vw;
+  height: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #E7F6F2;
+  padding: 8vh 0;
+}
+
+#intro{
+  width: 70vw;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#aboutbuttons{
+  width: 20vw;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10vh;
+  
+
+}
+
+#aboutbuttons button{
+  color: white;
+  background-color: #395b64;
+  border-radius: 5px;
+ border: none;
+ padding: 1vh;
+}
+
+#aboutbuttons button:hover{
+  cursor: pointer;
+  transform: scale(1.07);
+  transition: 500ms;
+}
+
 
 /* skills */
 
 #skills{
     width: 100vw;
     height: auto;
-    /* border: 1px solid red; */
+    border-bottom: 1px solid rgb(202, 202, 202);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,7 +242,7 @@ a{
     column-gap: 3vw;
 margin: auto;
 margin-top: 5vh;
-margin-bottom: 15vh;
+margin-bottom: 5vh;
 }
 
 .techstackcards{
@@ -216,69 +278,91 @@ object-fit: contain;
 
 
 
-/* about */
-#about{
+/* projects */
+
+
+#projects{
     width: 100vw;
     height: auto;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    background-color: #E7F6F2;
-}
-
-#intro{
-    width: 70vw;
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-#aboutbuttons{
-    width: 20vw;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-around;
+    padding: 5vh 0;
     margin-bottom: 10vh;
-    
-
 }
 
-#aboutbuttons button{
-    color: white;
-    background-color: #395b64;
-    border-radius: 5px;
-   border: none;
-   padding: 1vh;
+
+.projectcards{
+    width: 70vw;
+    /* border: 1px solid red; */
+    border-radius: 1vh;
+    margin-top: 10vh;
+    height: auto;
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(59, 59, 59, 0.24) 0px 3px 8px;
+    background-color: #e0ebec;
 }
 
-#aboutbuttons button:hover{
-    cursor: pointer;
+.projectcards:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 500ms;
+}
+
+.projectimg{
+  width: 50%;
+  /* border: 1px solid blue; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectimg>img{
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
+
+.projectdetails{
+  width: 50%;
+  /* border: 1px solid blue; */
+  padding: 3vh;
+}
+
+.projectdetails>h2:hover{
+  transform: scale(1.01);
+}
+
+.projectbtns{
+  width: 70%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.projectbtns button{
+  border: none;
+  border-radius: 5px;
+  padding: 1vh 2vh;
+  color: white;
+  background-color: #395b64;
+}
+
+
+.projectbtns button:hover{
+  cursor: pointer;
     transform: scale(1.07);
     transition: 500ms;
 }
 
-/* projects */
 
-
-#projects{
-    width: 100vw;
-    height: 100vh;
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5vh 0;
-}
-
-
-#projectcards{
-    width: 70vw;
-    /* border: 1px solid red; */
-    margin-top: 10vh;
-    height: 50vh;
-}
-/*  */
+/* github */
 
 #github{
     width: 100%;
@@ -395,6 +479,28 @@ height: 50%;
     .techcards{
         width: 75vw;
     }
+
+    
+    
+  }
+
+
+  @media screen and  (max-width : 900px){
+    .projectcards{
+      flex-direction: column;
+      
+    }
+
+    .projectimg{
+      width: 100%;
+      height: auto;
+    }
+
+    .projectdetails{
+      width: auto;
+      height: auto;
+      font-size: .9rem;
+    }
   }
   @media screen and (max-width: 450px) {
     .sidenav {padding-top: 15px;}
@@ -407,5 +513,27 @@ height: 50%;
 
     .techcards{
         width: 87vw;
+    }
+
+    #navbar{
+      padding: 0;
+    }
+
+    .projectdetails{
+      font-size: .7rem;
+    }
+
+    .projectbtns{
+      width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 400px){
+    .projectbtns{
+      width: 100%;
+    }
+
+    .projectdetails{
+      padding: 1vh
     }
   }
