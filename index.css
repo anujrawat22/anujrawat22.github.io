@@ -147,6 +147,7 @@ a{
     color: white;
     outline: none;
     text-decoration: none;
+    
 }
 
 
@@ -216,12 +217,13 @@ a{
   /* home */
 #home{
     width: 100vw;
-    height: 70vh;
+    height: auto;
     /* border: 1px solid red; */
     margin-top: 8vh;
     box-sizing: border-box;
     display: flex;
     padding: 10vh 4vh;
+    align-items: center;
 }
 
 #userimg{
@@ -245,7 +247,7 @@ a{
   padding: 0 10vw;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 }
 
@@ -276,7 +278,8 @@ a{
   align-items: center;
   justify-content: space-around;
   background-color: #E7F6F2;
-  padding: 8vh 0;
+  padding: 5vh 0;
+ 
 }
 
 #intro{
@@ -512,7 +515,7 @@ height: 50%;
   /* contact */
   #contact{
     width: 100%;
-    height: 60vh;
+    height: auto;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
@@ -611,12 +614,18 @@ align-items: center;
     #userdetails{
       width: 100%;
       height: 50%;
+      
     }
 
     #userimg{
-      width: 100%;
+      width: 270px;
       height: auto;
     }
+
+    #userdetails>h2{
+      font-size: 1.2rem;
+    }
+    
   }
   @media screen and (max-width: 450px) {
     .sidenav {padding-top: 15px;}
@@ -660,6 +669,8 @@ align-items: center;
     #userimg>img{
       width: 250px;
     }
+
+    
 
     #userdetails>h2{
       font-size: 1rem;
