@@ -1,18 +1,17 @@
-    const username = 'anujrawat22'
-    GitHubCalendar(".calendar", username);
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", username, { responsive: true });
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
-    // Use a proxy
-    GitHubCalendar(".calendar", username, {
-       proxy (username) {
-         return fetch(`https://your-proxy.com/github?user=${username}`)
-       }
-    }).then(r => r.text())
+GitHubCalendar(".calender", "anujrawat22", { responsive: true });
+
+function download() {
+  window.open(
+    "https://drive.google.com/file/d/1XUASBk9SaAmFSgpU1H22Gp4EhX8CZuLA/view"
+  );
+}
 
 
-    function download(){
-      
-window.open("https://drive.google.com/file/d/1XUASBk9SaAmFSgpU1H22Gp4EhX8CZuLA/view")
-    }
